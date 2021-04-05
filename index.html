@@ -4,60 +4,149 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <title>Mercado del Norte</title>
     
 </head>
-<body>
-    <h1> <img src="img/carrito.png" width="100" height="100">Mercado</h1>
-<nav align="right">
-    <a href="">Categorias</a>
-    <a href="">Ofertas</a>
-    <a href="">Vender</a>
-    <a href="">Ayuda</a>
 
-    <form action="" method="GET">
-        <label for="nombre">¿Qué producto buscas?</label>
-        <input type="text" placeholder="Ingrese producto" name="producto" id="nombre">
-
-        <input type="submit">
-
-    </form>
+<nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"> <img src="img/carrito.png" width="50" height="50"> Mercado</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Ofertas</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Categorias
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Vender</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="¿Que producto buscas?" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Buscar</button>
+        </form>
+      </div>
 </nav>
-    <hr>
 
-    <div align="center">
-    
-    <a href="./common/notebook.html">Notebook</a>
-    <a href="./common/software.html">Software</a>
-    <a href="./common/mothercombos.html">Mother y Combos</a>
-    <a href="./common/perifericos.html">Perifericos</a>
-    <a href="./common/consolayvideojuegos.html">Consola y Videojuegos</a>
-    <a href="./common/celularesytelefonos.html">Celulares y Telefonos</a>
-    </div>
+<body>
 
-    <hr>
+    <nav class="navbar navbar-default navbar-expand-lg navbar-dark bg-primary text-center">
+        <div class="container-fluid">
+          
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav mx-auto">
+
+                <div class="btn-group" role="group" aria-label="Basic example">
+                    <button type="button" class="btn btn-primary">Notebook</button>
+                    <button type="button" class="btn btn-primary">Software</button>
+                    <button type="button" class="btn btn-primary">Mother y Combos</button>
+                    <button type="button" class="btn btn-primary">Perifericos</button>
+                    <button type="button" class="btn btn-primary">Consola y Video juegos</button>
+                    <button type="button" class="btn btn-primary">Celulares y Telefonos</button>
+                  </div>
+
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
 <div align="center">
     <table>
 
         <tr>
-            <td><img src="img/prueba.png" width="200" height="200"></td>
-            <td><a href="HP.html">Notebook Hp 250 G7</a></td>
-            <td>Precio Total: $80000</td>
+            <td>
+                <div class="card" style="width: 18rem;">
+                    <img src="img/prueba.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Notebook Hp 250 G7</h5>
+                      <p class="card-text">Precio Total: $80000</p>
+                      <a href="/HP.html" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </td>
+
+
+            
+
+            <td>
+                <div class="card" style="width: 18rem;">
+                    <img src="img/prueba.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">MacBook Air A2179</h5>
+                      <p class="card-text">Precio Total: $153000</p>
+                      <a href="/mac.html" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </td>
+
+            <td>            
+                <div class="card" style="width: 18rem;">
+                    <img src="img/prueba.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Notebook Bgh At500</h5>
+                        <p class="card-text">Precio Total: $39790</p>
+                        <a href="/BGH.html" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </td>
+            
         </tr>
 
-        <tr>
-            <td><img src="img/prueba.png" width="200" height="200"></td>
-            <td><a href="BGH.html">Notebook Positivo Bgh 14 At500 </a></td>
-            <td>Precio Total: $39790</td>
-        </tr>
-
-        <tr>
-            <td><img src="img/prueba.png" width="200" height="200"></td>
-            <td><a href="mac.html">MacBook Air A2179</a></td>
-            <td>Precio Total: $153000</td>
-        </tr>
+       
     </table>
 </div> 
+
+
+<footer class="pt-4 my-md-5 pt-md-5 border-top">
+  <div class="row">
+    <div class="col-12 col-md">
+    </div>
+    <div class="col-6 col-md">
+      <h5>Acerca de</h5>
+      <ul class="list-unstyled text-small">
+        <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Mercado del Norte</a></li>
+        <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Tendencias</a></li>
+        <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Sustentabilidad</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5>Ayuda</h5>
+      <ul class="list-unstyled text-small">
+        <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Comprar</a></li>
+        <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Vender</a></li>
+        <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Resolucion de problemas</a></li>
+        <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Centro de seguridad</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5>Redes Sociales</h5>
+      <ul class="list-unstyled text-small">
+        <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Twitter</a></li>
+        <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Facebook</a></li>
+        <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Condiciones</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+</div>
 
 
 
